@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q3 2025 Quarterly Earnings Report | Global Finance Corp</title>
+  <meta name="description" content="Interactive Quarterly Earnings Presentation">
+  <meta name="author" content="Technical Consultant - 25f1000165@ds.study.iitm.ac.in">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+
+  <style>
+    .reveal .footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.5em;
+      color: #aaa;
+    }
+    .reveal .contact {
+      font-size: 0.7em;
+      color: #4cf;
+    }
+    .big-number {
+      font-size: 2.5em !important;
+      font-weight: bold;
+      color: #2ecc71;
+    }
+    @media (max-width: 768px) {
+      .big-number { font-size: 1.8em !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title Slide -->
+      <section data-background-color="#0a1a2f">
+        <h1>Q3 2025 Earnings Report</h1>
+        <h3>Global Finance Corporation</h3>
+        <p><small>Presented by Technical Consultant</small></p>
+        <p class="contact">25f1000165@ds.study.iitm.ac.in</p>
+        <p><small>November 25, 2025</small></p>
+      </section>
+
+      <!-- Markdown Slide -->
+      <section data-markdown data-separator="---">
+        <textarea data-template>
+          ## Financial Highlights — Q3 2025
+
+          - **Revenue**: $4.82B ↑ 18% YoY
+          - **Net Income**: $1.27B ↑ 24% YoY
+          - **EPS**: $3.41 (beat consensus by $0.18)
+          - **Operating Margin**: 31.2% (+320 bps)
+
+          ---
+
+          ## Key Drivers of Growth {data-background="#12213a"}
+
+          ### Digital Transformation Initiatives
+          - 42% increase in digital channel revenue
+          - AI-powered fraud detection saved $87M
+          - Cloud migration completed ahead of schedule
+
+          ### Strategic Acquisitions
+          - FinTech startup acquisition added 2.1M active users
+          - Immediate revenue synergy of $180M annualized
+
+          ---
+        </textarea>
+      </section>
+
+      <!-- Animated Fragments Slide -->
+      <section>
+        <h2>Revenue Breakdown by Segment</h2>
+        <div style="display: flex; justify-content: space-around; margin-top: 60px; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 200px;">
+            <h3 class="fragment fade-up" data-fragment-index="1">Retail Banking<br><span class="big-number">$2.1B</span></h3>
+            <p class="fragment" data-fragment-index="2">+12% YoY</p>
+          </div>
+          <div style="flex: 1; min-width: 200px;">
+            <h3 class="fragment fade-up" data-fragment-index="3">Investment Banking<br><span class="big-number">$1.4B</span></h3>
+            <p class="fragment" data-fragment-index="4">+31% YoY</p>
+          </div>
+          <div style="flex: 1; min-width: 200px;">
+            <h3 class="fragment fade-up" data-fragment-index="5">Wealth Management<br><span class="big-number">$1.32B</span></h3>
+            <p class="fragment" data-fragment-index="6">+19% YoY</p>
+          </div>
+        </div>
+        <aside class="notes">
+          Walk through each segment slowly. Emphasize Investment Banking's exceptional performance due to M&A surge.
+        </aside>
+      </section>
+
+      <!-- Code Sample with Syntax Highlighting -->
+      <section>
+        <h2>Risk-Adjusted Return Calculation</h2>
+        <pre><code class="hljs python" data-line-numbers="|2|4|6-8">
+import numpy as np
+import pandas as pd
+
+returns = portfolio['daily_returns']
+sharpe_ratio = (returns.mean() * 252) / (returns.std() * np.sqrt(252))
+
+# Sortino Ratio (downside deviation only)
+downside = returns[returns < 0]
+sortino_ratio = (returns.mean() * 252) / (downside.std() * np.sqrt(252))
+
+print(f"Sharpe Ratio: {sharpe_ratio:.2f}")
+print(f"Sortino Ratio: {sortino_ratio:.2f}")
+        </code></pre>
+        <aside class="notes">
+          This is production code from our quant team. We improved Sortino from 1.8 to 2.4 this quarter.
+        </aside>
+      </section>
+
+      <!-- Mathematical Equations -->
+      <section data-background-color="#001122">
+        <h2 style="color:#fff">Key Financial Formulas</h2>
+        <div style="font-size: 0.8em; color:#ddd">
+          <p>Earnings Per Share (EPS):</p>
+          \[ \text{EPS} = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Shares Outstanding}} \]
+
+          <p class="fragment">Return on Equity (RoE):</p>
+          \[ \text{RoE} = \frac{\text{Net Income}}{\text{Shareholders' Equity}} \times 100 = 21.8\% \]
+
+          <p class="fragment">Economic Value Added (EVA):</p>
+          \[ \text{EVA} = \text{NOPAT} - (\text{WACC} \times \text{Capital Employed}) = +\$842\text{M} \]
+        </div>
+        <aside class="notes">
+          Highlight that our EVA is strongly positive — we're creating real shareholder value above cost of capital.
+        </aside>
+      </section>
+
+      <!-- Final Slide -->
+      <section data-background-color="#0a2f0a">
+        <h1>Thank You</h1>
+        <h3>Questions & Discussion</h3>
+        <p style="margin-top: 60px;">
+          <strong>Contact:</strong><br>
+          25f1000165@ds.study.iitm.ac.in
+        </p>
+        <p><small>Presentation powered by RevealJS • Modern, interactive, open-source</small></p>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="footer">25f1000165@ds.study.iitm.ac.in | Q3 2025 Earnings | Confidential</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'convex',
+      backgroundTransition: 'fade',
+      slideNumber: 'c/t',
+      math: {
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+        config: 'TeX-AMS_HTML-full',
+        tex: {
+          inlineMath: [['\\(', '\\)']],
+          displayMath: [['\\[', '\\]']]
+        }
+      },
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+    });
+  </script>
+</body>
+</html>
